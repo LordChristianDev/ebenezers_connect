@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ebenezers Connect</title>
+
+	<!-- Styling -->
+	<link rel="stylesheet" href="index.css">
+
+	<!-- Icons & SVGs -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+	<!-- Appbar -->
+	<header class="appbar">
+		<div class="appbar-container">
+			<!-- Appbar Logo -->
+			<a class="appbar-logo-link" href="index.html">
+				<div class="appbar-logo">
+					<img src="assets/logo.png" alt="Logo" />
+
+					<div class="appbar-logo-title">
+						<h1>Ebenezers</h1>
+						<p>Rock of Refuge</p>
+					</div>
+				</div>
+			</a>
+
+			<!-- Appbar Links -->
+			<div class="appbar-navs">
+				<div class="appbar-links">
+					<a href="#about">About<span class="underline"></span></a>
+					<a href="#fellowship">Fellowship<span class="underline"></span></a>
+					<a href="#events">Events<span class="underline"></span></a>
+
+					<a href="#connect"><button class="action-btn">Join Us</button></a>
+				</div>
+
+			</div>
+
+			<!-- Mobile Menu Toggle -->
+			<div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+				<div class="hamburger"></div>
+				<div class="hamburger"></div>
+				<div class="hamburger"></div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Mobile Menu -->
+	<div class="mobile-menu" id="mobileMenu">
+		<nav class="mobile-appbar-links">
+			<a href="#about" onclick="closeMobileMenu()">About</a>
+			<a href="#fellowship" onclick="closeMobileMenu()">Fellowship</a>
+			<a href="#events" onclick="closeMobileMenu()">Events</a>
+
+			<a href="#connect"><button class="action-btn">Join Us</button></a>
+		</nav>
+	</div>
+
+	<!-- Hero Section -->
+	<section class="hero" id="hero">
+		<div class="hero-container">
+
+			<!-- Hero Text -->
+			<div class="hero-content">
+				<div class="hero-content-top fade-bottom fade-delay-1">
+					<i class="far fa-heart light-blue"></i>
+					<h1 class="label-text-large light-blue"> Welcome to our Connect Group</h1>
+				</div>
+
+				<div class="hero-content-text fade-bottom fade-delay-2">
+					<h1 class="headline-text-large">Where <span>Faith Meets</span> Friendship</h1>
+					<p class="body-text-medium">Join the Ebenezers Connect Group - a vibrant community built on
+						friendship, camaraderie, loyalty,
+						and our shared love for God. Together, we're each other's rock of refuge.</p>
+				</div>
+
+				<div class="hero-content-btn fade-bottom fade-delay-3">
+					<a href="#connect"><button class="action-btn">Join Our Connect Group</button></a>
+					<a href="#about"><button class="action-outlined-btn">Learn More</button></a>
+				</div>
+
+				<div class="hero-content-bottom fade-bottom fade-delay-4">
+					<div class="hero-content-bottom-stat">
+						<i class="fas fa-users"></i>
+						<h1 class="label-text-large">20+ Members</h1>
+					</div>
+
+					<div class="hero-content-bottom-stat">
+						<i class="fas fa-heart"></i>
+						<h1 class="label-text-large">Unity in Faith</h1>
+					</div>
+
+					<div class="hero-content-bottom-stat">
+						<i class="fas fa-star"></i>
+						<h1 class="label-text-large">Growing Together</h1>
+					</div>
+				</div>
+			</div>
+
+			<!-- Hero Image -->
+			<img class="hero-image fade-bottom fade-delay-5" src="assets/friends.png" alt="Logo" />
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section class="about" id="about">
+		<div class="about-container">
+			<!-- About Section Heading -->
+			<div class="about-heading">
+				<h4 class="headline-text-medium">Empowering Leaders</h4>
+				<p class="body-text-medium">We are more than just a group - we're a family united by faith, strengthened
+					by friendship, and
+					committed to being each other's rock of refuge in every season of life.</p>
+			</div>
+
+			<!-- About Section Mission/Vision -->
+			<div class="about-info">
+				<div class="about-info-card">
+					<div class="about-info-card-icon">
+						<i class="fas fa-crosshairs"></i>
+						<h2 class="headline-text-small">Our Mission</h2>
+					</div>
+					<p class="body-text-medium">To create a welcoming community where individuals can grow in their
+						faith, build meaningful
+						relationships, and support one another through life's journey while serving God and our
+						community with love and dedication.
+					</p>
+				</div>
+
+				<div class="about-info-card">
+					<div class="about-info-card-icon">
+						<i class="far fa-eye"></i>
+						<h2 class="headline-text-small">Our Vision</h2>
+					</div>
+
+					<p class="body-text-medium">To be a beacon of hope and love in our community, where every member
+						experiences the
+						transformative power of God's love and becomes equipped to be a rock of refuge for others in
+						their spiritual journey.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Fellowship Section -->
+	<section class="fellowship" id="fellowship">
+		<div class="fellowship-container">
+			<!-- Fellowship Heading -->
+			<div class="fellowship-heading">
+				<h4 class="headline-text-medium">What We Do Together</h4>
+			</div>
+
+			<!-- Fellowship Cards -->
+			<div class="fellowship-info">
+				<div class="fellowship-info-card">
+					<div class="fellowship-info-card-icon">
+						<i class="fas fa-music"></i>
+					</div>
+					<h1 class="title-text-medium">Worship Together</h1>
+					<p class="body-text-small">Experience the joy of praising God through music and song</p>
+				</div>
+
+				<div class="fellowship-info-card">
+					<div class="fellowship-info-card-icon">
+						<i class="fas fa-book"></i>
+					</div>
+					<h1 class="title-text-medium">Bible Study</h1>
+					<p class="body-text-small">Dive deep into God's word and grow in understanding</p>
+				</div>
+
+				<div class="fellowship-info-card">
+					<div class="fellowship-info-card-icon">
+						<i class="fas fa-users"></i>
+					</div>
+					<h1 class="title-text-medium">Fellowship</h1>
+					<p class="body-text-small">Build lasting friendships through shared activities and meals</p>
+				</div>
+
+				<div class="fellowship-info-card">
+					<div class="fellowship-info-card-icon">
+						<i class="fas fa-heart"></i>
+					</div>
+					<h1 class="title-text-medium">Community Service</h1>
+					<p class="body-text-small">Serve others and make a positive impact in our community</p>
+				</div>
+			</div>
+
+			<!-- Fellowship Activities -->
+			<div class="fellowship-activity">
+				<div class="fellowship-activity-card" style="background-image: url('assets/worship.jpg')">
+					<div class="fellowship-activity-card-overlay"></div>
+					<h1 class="title-text-small">Worship & Prayer</h1>
+				</div>
+
+				<div class="fellowship-activity-card" style="background-image: url('assets/eating.jpg')">
+					<div class="overlay"></div>
+					<h1>Fellowship & Meals</h1>
+				</div>
+
+				<div class="fellowship-activity-card" style="background-image: url('assets/volunteer.jpg')">
+					<div class="overlay"></div>
+					<h1>Community Service</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Events Section -->
+	<section class="events" id="events">
+		<div class="events-container">
+			<!-- Events Section Heading -->
+			<div class="events-heading">
+				<h4 class="headline-text-medium">Upcoming Events</h4>
+				<p class="body-text-medium">Join us for these exciting upcoming events and be part of our growing
+					community.</p>
+			</div>
+
+			<!-- Events Carousel -->
+			<div class="carousel-container">
+				<div class="carousel-track">
+					<div class="carousel-slide">
+						<div class="carousel-image">
+							<img src="assets/worship.jpg" alt="Worship Image" />
+							<button class="nav prev"><i class="fas fa-chevron-left"></i></button>
+						</div>
+						<div class="carousel-content">
+							<span class="tag">Weekly</span>
+							<h2 class="headline-text-small">GRVTY</h2>
+							<p>Join us for uplifting worship, inspiring messages, and fellowship with the community.</p>
+
+							<ul class="details">
+								<li><i class="fas fa-calendar"></i> Every Friday</li>
+								<li><i class="fas fa-clock"></i> 5:30 PM</li>
+								<li><i class="fas fa-map-marker"></i>Crossroads HQ</li>
+							</ul>
+
+							<button class="nav next"><i class="fas fa-chevron-right"></i></button>
+						</div>
+					</div>
+
+					<div class="carousel-slide">
+						<div class="carousel-image">
+							<img src="assets/eating.jpg" alt="Worship Image" />
+							<button class="nav prev"><i class="fas fa-chevron-left"></i></button>
+						</div>
+						<div class="carousel-content">
+							<span class="tag">Weekly</span>
+							<h2 class="headline-text-small">Sonday Service</h2>
+							<p>Join us for uplifting worship, inspiring messages, and fellowship with the community.</p>
+
+							<ul class="details">
+								<li><i class="fas fa-calendar"></i> Every Sonday</li>
+								<li><i class="fas fa-clock"></i> 10:00 AM / 4:00 PM</li>
+								<li><i class="fas fa-map-marker"></i>Crossroads HQ</li>
+							</ul>
+
+							<button class="nav next"><i class="fas fa-chevron-right"></i></button>
+						</div>
+					</div>
+
+					<div class="carousel-slide">
+						<div class="carousel-image">
+							<img src="assets/volunteer.jpg" alt="Worship Image" />
+							<button class="nav prev"><i class="fas fa-chevron-left"></i></button>
+						</div>
+						<div class="carousel-content">
+							<span class="tag">Weekly</span>
+							<h2 class="headline-text-small">Ebenezers Fellowship</h2>
+							<p>Join us for uplifting worship, inspiring messages, and fellowship with the community.</p>
+
+							<ul class="details">
+								<li><i class="fas fa-calendar"></i> Every Thursday</li>
+								<li><i class="fas fa-clock"></i> 6:30 PM</li>
+								<li><i class="fas fa-map-marker"></i>TBD</li>
+							</ul>
+
+							<button class="nav next"><i class="fas fa-chevron-right"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Carousel Dots -->
+			<div class="carousel-dots">
+				<span class="dot active"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</div>
+		</div>
+	</section>
+
+	<!-- Connect Section -->
+	<section class="connect" id="connect">
+		<div class="connect-container">
+			<div class="connect-info">
+				<!-- Connect Section Heading -->
+				<div class="connect-heading">
+					<h4 class="headline-text-medium">Connect With Us</h4>
+					<p class="body-text-medium">Ready to join our community? We'd love to hear from you and welcome
+						you into the Ebenezers family.</p>
+				</div>
+
+				<!-- Get In Touch -->
+				<div class="connect-in-touch">
+					<div class="connect-touch-link">
+						<a href="https://www.linkedin.com/in/lordchristian-regacho/">
+							<i class="fas fa-map-marker"></i>
+							<h3 class="title-text-small">Visit Us</h3>
+							<p class="body-text-small">Robinsons Galleria, 2nd Floor</p>
+						</a>
+					</div>
+
+					<div class="connect-touch-link">
+						<a href="https://www.linkedin.com/in/lordchristian-regacho/">
+							<i class="fas fa-phone"></i>
+							<h3 class="title-text-small">Call Us</h3>
+							<p class="body-text-small">09xxx xxx xxxx</p>
+						</a>
+					</div>
+
+					<div class="connect-touch-link">
+						<a href="mailto:officialebenezers@gmail.com">
+							<i class="fas fa-envelope"></i>
+							<h3 class="title-text-small">Email Us</h3>
+							<p class="body-text-small">hello@ebenezers.com</p>
+						</a>
+					</div>
+				</div>
+
+				<!-- Follow -->
+				<div class="connect-follow">
+					<h2 class="headline-text-small">Follow Our Journey</h2>
+
+					<div class="connect-follow-links">
+						<div class="connect-follow-link">
+							<a href="https://www.linkedin.com/in/lordchristian-regacho/">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</div>
+
+						<div class="connect-follow-link">
+							<a href="https://www.linkedin.com/in/lordchristian-regacho/">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer Section -->
+	<footer class="footer">
+		<div class="footer-container">
+
+			<!-- Footer Upper -->
+			<div class="footer-upper">
+				<div class="footer-info">
+					<div class="footer-data">
+						<a class="footer-logo-link" href="index.html">
+							<div class="footer-logo">
+								<img src="assets/logo.png" alt="Logo" />
+
+								<div class="footer-logo-title">
+									<h1>Ebenezers</h1>
+									<p>Rock of Refuge</p>
+								</div>
+							</div>
+						</a>
+
+						<p class="body-text-medium">A community built on friendship, faith, and love for God. Together,
+							we're each other's stone
+							of
+							help.</p>
+
+						<div class="footer-info-socials">
+							<a href="index.html"><i class="fab fa-facebook-square"></i></a>
+							<a href="index.html"><i class="fab fa-instagram"></i></a>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="footer-pages">
+					<div class="footer-navs">
+						<h6>Quick Links</h6>
+
+						<div class="footer-navs-links">
+							<a href="#about">About</a>
+							<a href="#fellowship">Fellowship</a>
+							<a href="#events">Events</a>
+						</div>
+					</div>
+
+					<div class="footer-navs">
+						<h6>Connect With Us</h6>
+
+						<div class="footer-navs-links">
+							<a href="#about">Robinsons Galleria, 2nd Floor</a>
+							<a href="#about">09xx xxx xxxx</a>
+							<a href="#about">hello@ebenezers.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<hr class="footer-line">
+
+			<!-- Footer Lower -->
+			<div class="footer-lower">
+				<span>&copy; 2025 Ebenezers Connect Group. All rights reserved.</span>
+
+				<div class="footer-lower-right">
+					<p class="body-text-medium">Made with</p>
+					<i class="far fa-heart"></i>
+					<p class="body-text-medium">for our community</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Interactivity -->
+	<script src="index.js"></script>
+</body>
+
+</html>
